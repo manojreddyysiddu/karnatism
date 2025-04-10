@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login & Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url('C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\2.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 520px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #ddd;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+
+    .form-group input:focus {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .toggle-link {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .toggle-link a {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="form-container">
+    <!-- LOGIN FORM -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+      <button class="btn">Login</button>
+      <div class="toggle-link">
+        Don't have an account? <a onclick="toggleForm()">Sign Up</a>
+      </div>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signup-form" class="hidden">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Create a password">
+      </div>
+      <button class="btn">Sign Up</button>
+      <div class="toggle-link">
+        Already have an account? <a onclick="toggleForm()">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm() {
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      loginForm.classList.toggle('hidden');
+      signupForm.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

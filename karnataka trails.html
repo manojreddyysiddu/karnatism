@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karnataka Tour Packages</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .book-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .book-btn:hover {
+      background: #1d4ed8;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Karnataka Tour Packages</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\mangalore.avif" alt="Bangalore to Mangalore" />
+      <div class="card-content">
+        <h2>Bangalore to Mangalore</h2>
+        <p>Enjoy the coastal charm with this scenic trip from Bangalore to Mangalore.</p>
+        <a href="ba to ma.html" class="book-btn">View Places</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\raichur.jpeg" alt="Bangalore to Raichur" />
+      <div class="card-content">
+        <h2>Bangalore to Raichur</h2>
+        <p>Explore the historical richness of Raichur on this cultural journey.</p>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="book-btn">View Places</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\murdeshwara total.jpg" alt="Bangalore to Murdeshwara" />
+      <div class="card-content">
+        <h2>Bangalore to Murdeshwara</h2>
+        <p>Visit the iconic Murdeshwara temple and serene beaches on this divine tour.</p>
+        <a href="#" class="book-btn">View Places</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ 

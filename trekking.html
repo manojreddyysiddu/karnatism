@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karnataka Trekking Tours</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('Trekking card image.JPG');
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .backgroung{
+        background-image: url("Trekking card image.JPG");
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transform: scale(0.95);
+      transition: all 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      background: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #1e5e3a;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animate cards one after another */
+    .card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\kudremukha.jpeg" alt="Kudremukh Trek">
+      <div class="card-content">
+        <h3>Kudremukh Trek</h3>
+        <p>Explore lush greenery, rolling hills, and magical fog of Kudremukh in the Western Ghats.</p>
+        <button ><a href="ticket.html">View beaches</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\narayanagiri hill.jpg" alt="Narayangiri Night Trek">
+      <div class="card-content">
+        <h3>Narayangiri Night Trek</h3>
+        <p>Adventure under the stars! Ideal for thrill seekers and night sky lovers near Bangalore.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\skandagiri hills.png" alt="Skandagiri Sunrise Trek">
+      <div class="card-content">
+        <h3>Skandagiri Sunrise Trek</h3>
+        <p>Witness a breathtaking sunrise above the clouds just 70km from Bangalore!</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

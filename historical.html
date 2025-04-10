@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karnataka Historical Places</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: slideUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card-content button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background-color: #2c80b4;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .card:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\Hampi.jpg" alt="Hampi">
+      <div class="card-content">
+        <h3>Hampi</h3>
+        <p>Explore the ancient ruins of Vijayanagara Empire in this UNESCO World Heritage site.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\mirjin fort.png" alt="mirgin fort">
+      <div class="card-content">
+        <h3>Mirgin Fort</h3>
+        <p>The fort is a renowned architectural marvel with high ceilings and bastions</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\Chitradurga-Karnataka.jpg" alt="chithrathurga fort">
+      <div class="card-content">
+        <h3>Chithradurga Fort</h3>
+        <p>The fort of Chitradurga is the first and foremost monument that ponders in to the mind of the tourists.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\hq720.jpg" alt="Bidar Fort">
+      <div class="card-content">
+        <h3>Bidar Fort</h3>
+        <p>Step into history at Bidar Fort, showcasing Persian-inspired Indo-Islamic design.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

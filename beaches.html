@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karnataka Beach Booking Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #fff);
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      position: relative;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #00796b;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .card-content button {
+      background-color: #00796b;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background-color: #004d40;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\1-om-beach-gokarna-karnataka-city-hero.jpeg" alt="Om Beach">
+      <div class="card-content">
+        <h3>Om Beach, Gokarna</h3>
+        <p>A serene beach with the iconic Om shape. Perfect for peaceful sunsets and water sports.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\kaup beach.jpg" alt="Kaup Beach">
+      <div class="card-content">
+        <h3>Kaup Beach</h3>
+        <p>Enjoy the lighthouse view and golden sands. A calm and photogenic destination near Udupi.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\thannirbhavi beach.webp" alt="Tannirbhavi Beach">
+      <div class="card-content">
+        <h3>Tannirbhavi Beach</h3>
+        <p>Located in Mangalore, this beach is clean, quiet, and family-friendly with tree shades.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\Karnataka-Tourism-Website-main\Karnataka-Tourism-Website-main\assets\images\malpe.jpg" alt="Malpe Beach">
+      <div class="card-content">
+        <h3>Malpe Beach</h3>
+        <p>Famous for St. Mary’s Island ferries, jet skiing, and vibrant beach festivals.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

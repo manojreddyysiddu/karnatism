@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karnataka Temples</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      transform: translateY(0);
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card p {
+      margin: 0.8rem 0 1.2rem;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .book-btn {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .book-btn:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <!-- Murdeshwara -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\murdeshwaram.jpg" alt="Murdeshwara Temple">
+      <div class="card-content">
+        <h2>Murdeshwara Temple</h2>
+        <p>Famous for its towering Shiva statue by the sea, located in Uttara Kannada district.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <!-- ISKCON Temple -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\iskon temple.jpg" alt="ISKCON Temple Bangalore">
+      <div class="card-content">
+        <h2>ISKCON Temple</h2>
+        <p>Modern and spiritual, this Hare Krishna temple is one of the largest ISKCON centers in the world.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Kukke Subramanya -->
+    <div class="card">
+      <img src="C:\Users\Manoj\Downloads\karnatism\Karnataka-Tourism-Website-main\assets\images\kukke_subramanya1.png" alt="Kukke Subramanya Temple">
+      <div class="card-content">
+        <h2>Kukke Subramanya</h2>
+        <p>Renowned pilgrimage site for snake worship, nestled in the Western Ghats.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
